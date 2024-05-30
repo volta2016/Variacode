@@ -1,7 +1,5 @@
+import { LogoIcon } from "./LogoIcon";
+
 export const Logo: React.FC = () => {
-  return (
-    <>
-      <img src="../assets/proxy-logo.svg" alt="Logo" className="logo" />
-    </>
-  );
+  return <LogoIcon />;
 };

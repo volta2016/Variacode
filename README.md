@@ -79,6 +79,7 @@ my-vite-app/
 │   │   └── ProductCard.tsx
 │   │   └── SearchBar.tsx
 │   │   └── SearchIcon.tsx
+│   │   └── LogoIcon.tsx
 │   │   └── Skeleton.tsx
 │   │   └── Suggestion.tsx
 │   ├── styles/
