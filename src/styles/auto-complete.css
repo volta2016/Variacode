@@ -1,0 +1,103 @@
+/* AutoComplete */
+.autoComplete {
+  position: relative;
+}
+
+.wrapper-input {
+  position: relative;
+  display: flex;
+  margin-bottom: 24px;
+  .clear-button {
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.search-icon,
+.clear-button {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 34px 8px 8px;
+  color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+}
+
+.input:focus {
+  border-color: var(--focus-color); /* Apply focus color */
+  box-shadow: 0 0 5px var(--focus-color); /* Add a subtle shadow for better 
+  visibility */
+  outline: none;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--input-background);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  z-index: 1000;
+}
+
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion:hover,
+.highlightedSuggestion {
+  background-color: var(
+    --suggestion-hover-background
+  ); /* New subtle background for suggestions */
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--highlight-text);
+  background-color: var(--highlight-background); /* Highlighting color */
+}
+
+.product-card {
+  cursor: pointer;
+  max-width: 280px; /* Ancho máximo de cada tarjeta */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card img {
+  width: 40%;
+  height: 148px;
+  object-fit: contain;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: var(--black);
+  text-wrap: balance;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: var(--textp-card);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
