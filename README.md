@@ -186,3 +186,7 @@ command to run all tests
 ```
 
 ````
+
+## Deploy of project
+
+[See deploy](https://lambent-florentine-70fc83.netlify.app/)
